@@ -1,0 +1,57 @@
+- 부모 URL 컬럼 : 드라이브 들어가면 해당 URL을 부모 컬럼으로 가진 하위 폴더들 출력
+
+
+https://copycoding.tistory.com/229
+
+1. 파일, 폴더 생성 / 파일, 폴더 업로드
+2. 생성한거 화면에 띄우기, 정렬 (경로 불러와서)
+3. 파일, 폴더 삭제
+4. 클릭시 이미지 보기 / 동영상보기 / 문서보기
+5. 파일명 검색 / 경로 검색
+- 후순위
+6. 이름 변경 혹은 업로드시 같은 이름일 경우 처리
+7. 우클릭, 드래그, 더블클릭 이벤트
+
+정렬 기준 : 
+이름 , 크기, 올린 날짜
+
+- 오늘 할 일 : 
+1. 파일, 폴더 불러오기 DB에 저장  X
+2. 폴더는 새로만들기 버튼을 통해 만들 수 있게
+3. 현재  contextPath 불러와서 현재 경로 설정 x
+
+FILE_DATA 테이블
+- 파일번호, 관리자ID, 원본파일명, 저장될 파일 명, 생성 일, 파일 크기, 파일 위치, 확장자, 부모폴더 이름 
+
+저장 경로 >> 
+ex) 
+1. 공유 폴더 클릭시 url : https://drive.google.com/drive/shared-with-me
+2. 공유 폴더 내에 있는 팀플_권수연김지수오수연이석호최소은 폴더 클릭시
+   url: https://drive.google.com/drive/folders/1RfbLEdt_noWl4F_lUWb4nFgEKeiNl41R
+ --> 결국 폴더 클릭시 드라이브 안에있는 folders url 밑에 저장됨
+
+
+
+아래와 같은 주소가 있을 경우
+http://localhost:8080/test/index.jsp
+request.getRequestURI();   //프로젝트경로부터 파일까지의 경로값을 얻어옴 (/test/index.jsp)
+request.getContextPath();  //프로젝트의 경로값만 가져옴(/test)
+request.getRequestURL();   //전체 경로를 가져옴 (http://localhost:8080/test/index.jsp)
+request.getServletPath();  //파일명 (/index.jsp)
+
+
+1. C드라이브에 있는 폴더들 C드라이브 눌렀을 때 펼치기 
+2. 폴더 이름 가져와서 해당 경로에있는 폴더명 겹치지 않게
+3. 해당 경로에서 파일 및 폴더 업로드 하고 화면에 출력 될 수 있게
+4. 폴더에서 폴더 타고 들어가는거  ★★★★★★★
+
+
+
+1. 파일 업로드
+2. 폴더, 파일 이름 변경
+3. 파일,폴더 삭제
+4. 파일 이동 및 복사
+(이동은 해당 위치에 파일 or 폴더 생성 후 원본 삭제)
+(복사는 해당위치에 파일 복사)
+5 파일 업로드시 하위폴더들 크기변화
+

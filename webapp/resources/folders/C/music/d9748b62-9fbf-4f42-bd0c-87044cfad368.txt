@@ -1,0 +1,49 @@
+C\desktop
+
+C드라이브 들어갔을때 parent 컬럼이 C인 폴더가 보여짐
+
+document에 들어갔을때 parent컬럼이 C\documents인 폴더들이 보여짐
+
+
+//	@RequestMapping("/C/Documents")
+//	public String documents(Model model) {
+//		model.addAttribute("type","documents");
+//		
+//		return "folders/folderList";
+//	}
+//	@RequestMapping("/C/Downloads")
+//	public String downloads(Model model) {
+//		model.addAttribute("type","downloads");
+//		
+//		return "folders/folderList";
+//	}
+//	@RequestMapping("/C/Videos")
+//	public String videos(Model model) {
+//		model.addAttribute("type","videos");
+//		
+//		return "folders/folderList";
+//	}
+//	@RequestMapping("/C/Desktop")
+//	public String desktop(Model model) {
+//		model.addAttribute("type","desktop");
+//		
+//		return "folders/folderList";
+//	}
+//	@RequestMapping("/C/Pictures")
+//	public String pictures(Model model) {
+//		model.addAttribute("type","pictures");
+//		
+//		return "folders/folderList";
+//	}
+//	@RequestMapping("/C/Music")
+//	public String music(Model model) {
+//		model.addAttribute("type","music");
+//		
+//		return "folders/folderList";
+//	}
+//	@RequestMapping("/D")
+//	public String dDrive(Model model) {
+//		model.addAttribute("type","dDrive");
+//		
+//		return "folders/folderList";
+//	}

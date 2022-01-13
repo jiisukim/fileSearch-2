@@ -1,0 +1,19 @@
+ns	118.219.64.66
+www	118.219.64.66
+intranet	118.219.64.67
+nas	118.219.64.90
+
+1661-4370
+
+아사달
+ID: systemgate
+PW: sg9223
+
+가비아
+ID : systemgate1
+PW: sg1921231!
+
+admin / tofhqrp123$%
+
+개인통관부호
+P170003729691
